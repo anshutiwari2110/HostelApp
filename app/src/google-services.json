@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "570601716658",
+    "project_id": "cet-hostel",
+    "storage_bucket": "cet-hostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570601716658:android:fe95773db0445221e3c2ab",
+        "android_client_info": {
+          "package_name": "com.anshutiwari.hostelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570601716658-9cgbf27rg42cc0abs6sshpng02tacq27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anshutiwari.hostelapp",
+            "certificate_hash": "192f7c6be3f980ac09b875af6fffafdacf9861a4"
+          }
+        },
+        {
+          "client_id": "570601716658-l0vme7q4r97octffjgdlk721nml18ojo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm6W9awt7jIAswyw8rdnvNDntcEo3rH2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570601716658-l0vme7q4r97octffjgdlk721nml18ojo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
