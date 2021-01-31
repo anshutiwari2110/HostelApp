@@ -16,18 +16,19 @@
 
     <!--    For Sign Up Activities-->
     <string name="Register">Register</string>
-    <string name="Registration_number">College Registration Number</string>
+    <string name="Registration_number">Enter College Regd Number</string>
     <string name="admin_register">ADMIN REGISTER </string>
     <string name="student_register">STUDENT REGISTER </string>
     <string name="Register_Phone">Enter Mobile Number</string>
+    <string name="register_name">Enter Your Name</string>
     <string name="Register_Username">Enter Your Email</string>
     <string name="Register_Password">Enter Password</string>
-    <string name="Register_Confirm_Password">Enter to Confirm Password</string>
+    <string name="Register_Role">Enter Your Role(Admin)</string>
+    <string name="already_have_an_account">Already have an account ?</string>
 
     <!--    For Welcome Activities-->
     <string name="Welcome">Welcome</string>
     <string name="ContinueAsStudent">Continue As Student</string>
     <string name="ContinueAsAdmin">Continue As Admin</string>
-
 
 </resources>

@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HostelApp">
+        <activity android:name=".Student.StudentRegisterActivity"></activity>
+        <activity android:name=".Admin.AdminRegisterActivity" />
         <activity android:name=".Student.StudentLoginActivity" />
         <activity android:name=".Admin.AdminLoginActivity" />
         <activity android:name=".Activities.WelcomeActivity" />
