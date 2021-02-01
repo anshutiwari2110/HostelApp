@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896767527996",
+    "project_id": "cethostelapp",
+    "storage_bucket": "cethostelapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896767527996:android:4e2d803a94e98e22f34739",
+        "android_client_info": {
+          "package_name": "com.anshutiwari.hostelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896767527996-3kc5ochg130cccr5rrh870aa0l46f02u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8JNtpc6OstP8Z3zPdIIVtxZEKHBwFRPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896767527996-3kc5ochg130cccr5rrh870aa0l46f02u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
