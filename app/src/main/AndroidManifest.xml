@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HostelApp">
-        <activity android:name=".Student.StudentRegisterActivity"></activity>
+        <activity android:name=".NotesActivity"></activity>
+        <activity android:name=".RoomActivity" />
+        <activity android:name=".ComplaintActivity" />
+        <activity android:name=".MessActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Student.StudentRegisterActivity" />
         <activity android:name=".Admin.AdminRegisterActivity" />
         <activity android:name=".Student.StudentLoginActivity" />
         <activity android:name=".Admin.AdminLoginActivity" />
         <activity android:name=".Activities.WelcomeActivity" />
         <activity android:name=".Activities.SplashActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
