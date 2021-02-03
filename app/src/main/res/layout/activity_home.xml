@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:paddingBottom="30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/slider"
@@ -28,53 +29,56 @@
             tools:ignore="MissingClass">
 
         </com.denzcoskun.imageslider.ImageSlider>
+
         <TextView
             android:id="@+id/notice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/contact_background"
             android:elevation="8dp"
             android:padding="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="center"
             android:text="NOTICE"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_notice"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_alignTop="@+id/notice"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/rv_notice"/>
+                    android:layout_marginBottom="10dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CONTACT US"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
             android:background="@drawable/contact_background"
             android:elevation="8dp"
-            android:textSize="30sp"
-            android:layout_margin="15dp"
-            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="CONTACT US"
             android:textAlignment="center"
-            android:padding="10dp"/>
+            android:textSize="30sp" />
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_margin="10dp"
             android:elevation="20dp"
             app:cardCornerRadius="10dp"
-            android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,12 +117,12 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_call_button"
                     android:drawableLeft="@drawable/ic_call"
-                    android:textColor="#fff"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
-                    android:text="Call Now"
-                    android:textSize="12sp"
                     android:paddingRight="10dp"
+                    android:text="Call Now"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/image1"
                     app:layout_constraintTop_toBottomOf="@+id/text1"
@@ -129,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_mail_button"
-                    android:drawableLeft="@drawable/ic_mail"
+                    android:drawableStart="@drawable/ic_mail"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
@@ -139,20 +143,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.619"
-                    app:layout_constraintVertical_bias="0.68"
                     app:layout_constraintStart_toEndOf="@+id/iv_call_one"
-                    app:layout_constraintTop_toBottomOf="@+id/text1" />
+                    app:layout_constraintTop_toBottomOf="@+id/text1"
+                    app:layout_constraintVertical_bias="0.68" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_margin="10dp"
             android:elevation="20dp"
             app:cardCornerRadius="10dp"
-            android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -190,13 +195,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_call_button"
-                    android:drawableLeft="@drawable/ic_call"
-                    android:text="Call Now"
-                    android:textSize="12sp"
-                    android:textColor="#fff"
+                    android:drawableStart="@drawable/ic_call"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:text="Call Now"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/image11"
                     app:layout_constraintTop_toBottomOf="@+id/text11"
@@ -207,30 +212,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_mail_button"
-                    android:drawableLeft="@drawable/ic_mail"
-                    android:text="Send Mail"
-                    android:textSize="12sp"
-                    android:textColor="#fff"
+                    android:drawableStart="@drawable/ic_mail"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:text="Send Mail"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.619"
-                    app:layout_constraintVertical_bias="0.68"
                     app:layout_constraintStart_toEndOf="@+id/iv_call_two"
-                    app:layout_constraintTop_toBottomOf="@+id/text11" />
+                    app:layout_constraintTop_toBottomOf="@+id/text11"
+                    app:layout_constraintVertical_bias="0.68" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_margin="10dp"
             android:elevation="20dp"
             app:cardCornerRadius="10dp"
-            android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -268,13 +274,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_call_button"
-                    android:drawableLeft="@drawable/ic_call"
-                    android:text="Call Now"
-                    android:textSize="12sp"
-                    android:textColor="#fff"
+                    android:drawableStart="@drawable/ic_call"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:text="Call Now"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/image111"
                     app:layout_constraintTop_toBottomOf="@+id/text111"
@@ -285,19 +291,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_mail_button"
-                    android:drawableLeft="@drawable/ic_mail"
-                    android:text="Send Mail"
-                    android:textSize="12sp"
-                    android:textColor="#fff"
+                    android:drawableStart="@drawable/ic_mail"
                     android:drawablePadding="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:text="Send Mail"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.619"
-                    app:layout_constraintVertical_bias="0.68"
                     app:layout_constraintStart_toEndOf="@+id/iv_call_three"
-                    app:layout_constraintTop_toBottomOf="@+id/text111" />
+                    app:layout_constraintTop_toBottomOf="@+id/text111"
+                    app:layout_constraintVertical_bias="0.68" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
