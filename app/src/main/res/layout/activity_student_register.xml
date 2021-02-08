@@ -204,7 +204,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
+        <Button
             android:id="@+id/btn_student_register"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
